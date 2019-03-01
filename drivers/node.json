@@ -1,0 +1,33 @@
+{
+    "capabilities": [
+        {
+            "browserName": "chrome",
+            "maxInstances": 10,
+            "platform": "WINDOWS",
+            "version": "51",
+            "webdriver.chrome.driver": "chromedrive.exe"
+        },
+        {
+            "browserName": "internet explorer",
+            "maxInstances": 10,
+            "platform": "WINDOWS",
+            "version": "11",
+            "webdriver.ie.driver": "IEDriverServer.exe"
+        },
+        {
+            "browserName": "firefox",
+            "maxInstances": 10,
+            "platform": "WINDOWS",
+            "version": "65",
+            "webdriver.firefox.bin": "geckodriver.exe"
+        }
+    ],
+    "configuration": {
+        "proxy": "org.openqa.grid.selenium.proxy.DefaultRemoteProxy",
+        "maxSession": 10,
+        "port": 6666,
+        "register": true,
+        "registerCycle": 5000,
+        "hub": "http://192.168.0.106:4444"
+    }
+}
